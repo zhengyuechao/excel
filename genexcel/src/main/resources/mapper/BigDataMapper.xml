@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zyc.mapper.BigDataMapper">
+  
+    
+    <select id="findBigDataByDivision" resultType="com.zyc.entity.BigDataEntity">
+        SELECT * from V_QUERY_BY_CURR_AREA_NAME where unit_name = '富民路街社区卫生服务中心'
+    </select>
+    
+    <select id="findBigDataByCurrentAreas" resultType="com.zyc.entity.BigDataEntity">
+    
+        SELECT * from V_QUERY_BY_CURR_AREA_NAME where current_areas = #{currentareas}
+    </select>
+</mapper>
