@@ -2,7 +2,7 @@ spring:
   #数据库配置
   datasource:
     driverClassName: oracle.jdbc.driver.OracleDriver
-    url: jdbc:oracle:thin:@124.93.18.203:30011:orcl 
+    url: jdbc:oracle:thin:@172.16.140.130:1521:orcl
     username: senyintccvd
     password: senyintccvd
     druid:
